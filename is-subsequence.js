@@ -13,7 +13,6 @@ function isSubsequence(str1, str2) {
   const firstKeys = Array.from(firstStr.keys())
   const secondKeys = Array.from(secondStr.keys())
   const filtered = secondKeys.filter((char) => firstKeys.includes(char))
-  console.log(firstKeys, filtered)
   // compare the two arrays to see if they contain the same elements in the same order
   if (firstKeys.length !== filtered.length) return false
   for (let i = 0; i < firstKeys.length; i++) {
